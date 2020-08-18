@@ -46,7 +46,8 @@ const config = {
                     'Host': new URL(devServerProxyTarget).host
                 }
             }
-        }
+        },
+        disableHostCheck: true
     },
     devtool: 'source-map',
     mode: minimize ? 'production' : 'development',

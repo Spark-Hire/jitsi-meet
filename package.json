@@ -1,6 +1,6 @@
 {
-  "name": "jitsi-meet",
-  "version": "0.0.0",
+  "name": "@spark-hire/jitsi-meet",
+  "version": "0.1.0-dev-1",
   "description": "A sample app for the Jitsi Videobridge",
   "repository": {
     "type": "git",
@@ -146,7 +146,8 @@
     "lint": "eslint . && flow",
     "postinstall": "jetify",
     "test": "jest",
-    "validate": "npm ls"
+    "validate": "npm ls",
+    "build": "webpack -p && mkdir -p dist && cp -R build/* dist/"
   },
   "browser": {
     "jQuery-Impromptu": "jQuery-Impromptu/src/jquery-impromptu.js"
